@@ -33,6 +33,13 @@
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'TacticSans';
+    src: url('/src/assets/fonts/TacticSans-Reg.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

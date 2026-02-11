@@ -35,7 +35,7 @@ function LandingPage() {
           <nav className="flex justify-between items-center mt-16 w-full z-50 px-4 lg:px-8">
             {/* Left: Nav Menu */}
             <div className="flex-1">
-              <ul className="sm:flex hidden lg:text-xl font-satoshi_v space-x-4 lg:space-x-8 text-custom-white items-center">
+              <ul className="sm:flex hidden text-base lg:text-lg font-tactic_sans space-x-4 lg:space-x-8 text-custom-white items-center">
                 <li>
                   <Link
                     to="about"
@@ -90,9 +90,11 @@ function LandingPage() {
             {/* Right: Register Button */}
             <div className="flex-1 flex justify-end items-center gap-4">
               <div className="hidden sm:block">
-                <span className="font-satoshi_v text-custom-white text-[18px] font-medium cursor-pointer">
-                  Register
-                </span>
+                <div className="border border-custom-white rounded-full px-4 py-2 cursor-pointer hover:bg-custom-white hover:bg-opacity-10 transition-colors">
+                  <span className="font-tactic_sans text-custom-white text-sm lg:text-base">
+                    Register Now - It's Free
+                  </span>
+                </div>
               </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -108,7 +110,7 @@ function LandingPage() {
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >
-              <ul className="space-y-6 flex flex-col p-8 text-custom-white font-satoshi_v text-xl">
+              <ul className="space-y-6 flex flex-col p-8 text-custom-white font-tactic_sans text-xl">
                 <li className="text-left">
                   <Link
                     to="about"
@@ -155,9 +157,11 @@ function LandingPage() {
                 </li>
                 {/* Mobile Register */}
                 <li className="text-left mt-8 pt-4">
-                  <span className="font-satoshi_v text-custom-white text-[18px] font-medium cursor-pointer">
-                    Register
-                  </span>
+                  <div className="border border-custom-white rounded-full px-4 py-2 cursor-pointer inline-block">
+                    <span className="font-tactic_sans text-custom-white text-base">
+                      Register Now - It's Free
+                    </span>
+                  </div>
                 </li>
               </ul>
             </div>

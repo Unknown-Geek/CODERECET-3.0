@@ -19,7 +19,8 @@ module.exports = {
         bebas_neue:['Bebas'],
         poppins: ['Poppins', 'sans-serif'],
         thomeo: ['Thomeo'],
-        hoops_brother: ['HoopsBrother']
+        hoops_brother: ['HoopsBrother'],
+        tactic_sans: ['TacticSans']
 
       },
       animation: {
