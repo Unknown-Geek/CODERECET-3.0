@@ -57,12 +57,12 @@ function App() {
         <AboutUs/>
         <Countdown/>
         <RefreshReboot/>
-        <PerksSection/>
+        {/* <PerksSection/>
         <Prize/>
         <Sponsorship/>
         <Gallery/>
         <FAQ/>
-        <Footer/>
+        <Footer/> */}
       </motion.div>
     </div>
   )
