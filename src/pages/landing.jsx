@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import gif from "../assets/cube_float1 1.gif";
+import cube from "../assets/Cube.png";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu_white.svg";
 import close from "../assets/close_white.svg";
