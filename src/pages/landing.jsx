@@ -172,21 +172,21 @@ function LandingPage() {
             </div>
           </nav>
         </div>
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)]">
-          <h1 className="z-10 text-center">
+        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] relative">
+          <h1 className="text-center">
             <div className="font-thomeo text-5xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               CET<span className="font-satoshi_v">'</span>S
             </div>
             <div className="font-thomeo text-5xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               BIGGEST HACKATHON
             </div>
-            <div className="font-hoops_brother text-5xl lg:text-8xl mt-4" style={{ color: '#E6F85A' }}>
+            <div className="font-hoops_brother text-5xl lg:text-8xl mt-4 relative z-10" style={{ color: '#E6F85A' }}>
               IS BACK.
             </div>
           </h1>
           
           <img
-            className="z-20 mt-8 lg:mt-12"
+            className="z-20 -mt-16 lg:-mt-24"
             src={cube}
             alt="Cube"
             style={{ width: '400px', maxWidth: '90vw' }}
