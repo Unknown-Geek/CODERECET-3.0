@@ -26,28 +26,28 @@ function Footer() {
           <div className="flex flex-col gap-6 w-full md:w-1/2">
             <div className="flex items-center gap-4 mb-2">
               <img src={logo} className="w-12 h-12" alt="Code Recet Logo" />
-              <span className="font-thomeo text-white text-5xl md:text-8xl">Code Recet</span>
+              <span className="font-thomeo text-white text-6xl md:text-8xl lg:text-[7rem]">Code Recet</span>
             </div>
             <div className="w-full h-[2px] bg-[#e6f85a] mb-4"></div>
-            <nav className="flex flex-col gap-4 text-white text-2xl md:text-4xl font-poppins">
-              <a href="#landing" className="flex items-center gap-2"><span className="text-[#e6f85a] text-2xl md:text-4xl">&gt;</span> Home</a>
-              <a href="#about" className="flex items-center gap-2"><span className="text-[#e6f85a] text-2xl md:text-4xl">&gt;</span> About Us</a>
-              <a href="#events" className="flex items-center gap-2"><span className="text-[#e6f85a] text-2xl md:text-4xl">&gt;</span> Events</a>
-              <a href="#gallery" className="flex items-center gap-2"><span className="text-[#e6f85a] text-2xl md:text-4xl">&gt;</span> Gallery</a>
-              <a href="#team" className="flex items-center gap-2"><span className="text-[#e6f85a] text-2xl md:text-4xl">&gt;</span> Our Team</a>
+            <nav className="flex flex-col gap-4 text-white text-lg font-poppins">
+              <a href="#landing" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> Home</a>
+              <a href="#about" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> About Us</a>
+              <a href="#events" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> Events</a>
+              <a href="#gallery" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> Gallery</a>
+              <a href="#team" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> Our Team</a>
             </nav>
             <div className="flex gap-8 mt-8">
-              <a href="https://twitter.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter" className="w-14 h-14 md:w-20 md:h-20" /></a>
-              <a href="https://facebook.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" className="w-14 h-14 md:w-20 md:h-20" /></a>
-              <a href="https://discord.gg/coderecet" target="_blank" rel="noopener noreferrer"><img src={discord} alt="Discord" className="w-14 h-14 md:w-20 md:h-20" /></a>
-              <a href="https://linkedin.com/company/coderecet" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" className="w-14 h-14 md:w-20 md:h-20" /></a>
-              <a href="https://github.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" className="w-14 h-14 md:w-20 md:h-20" /></a>
+              <a href="https://twitter.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter" className="w-10 h-10" /></a>
+              <a href="https://facebook.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" className="w-10 h-10" /></a>
+              <a href="https://discord.gg/coderecet" target="_blank" rel="noopener noreferrer"><img src={discord} alt="Discord" className="w-10 h-10" /></a>
+              <a href="https://linkedin.com/company/coderecet" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" className="w-10 h-10" /></a>
+              <a href="https://github.com/coderecet" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" className="w-10 h-10" /></a>
             </div>
           </div>
           <div className="flex flex-col items-end w-full md:w-1/2 gap-6">
-            <div className="text-white text-2xl md:text-4xl font-poppins mb-2 mt-2 md:mt-0">Hackathon Organized by :</div>
-            <img src={tinkerhub} className="w-56 md:w-72 h-auto mb-2" alt="Tinkerhub" />
-            <img src={iet} className="w-56 md:w-72 h-auto" alt="IET" />
+            <div className="text-white text-lg font-poppins mb-2 mt-2 md:mt-0">Hackathon Organized by :</div>
+            <img src={tinkerhub} className="w-48 h-auto mb-2" alt="Tinkerhub" />
+            <img src={iet} className="w-48 h-auto" alt="IET" />
           </div>
         </div>
       </div>
