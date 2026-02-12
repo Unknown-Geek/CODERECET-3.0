@@ -42,16 +42,7 @@ function LandingPage() {
   return (
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
-        <div className="justify-center flex">
-          <div className="flex h-full gap-24 lg:gap-[15vw] absolute">
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
-          </div>
-        </div>
+
         <div className="flex justify-center">
           <nav className="flex justify-between items-center mt-16 w-full z-50 px-4 lg:px-8">
             {/* Left: Nav Menu */}
