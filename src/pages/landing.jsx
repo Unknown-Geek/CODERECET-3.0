@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-scroll";
 import { createBlendy } from "blendy";
 import cube from "../assets/Cube.png";
+import grid from "../assets/Grid.png";
 import logo from "../assets/Logo copy.png";
 import menu from "../assets/menu_white.svg";
 import close from "../assets/close_white.svg";
@@ -41,16 +42,7 @@ function LandingPage() {
   return (
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
-        <div className="justify-center flex">
-          <div className="flex h-full gap-24 lg:gap-[15vw] absolute">
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="w-[1px] bg-custom-gray opacity-20"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
-          </div>
-        </div>
+
         <div className="flex justify-center">
           <nav className="flex justify-between items-center mt-16 w-full z-50 px-4 lg:px-8">
             {/* Left: Nav Menu */}
@@ -188,29 +180,39 @@ function LandingPage() {
             </div>
           </nav>
         </div>
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] relative mt-8 lg:mt-12">
-          <h1 className="text-center">
-            <div className="font-thomeo text-5xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
+
+        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] relative mt-8 lg:mt-12 w-full">
+          <h1 className="text-center w-full px-2 sm:px-0">
+            <div className="font-thomeo text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               CET<span className="font-satoshi_v">'</span>S
             </div>
-            <div className="font-thomeo text-5xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
+            <div className="font-thomeo text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               BIGGEST HACKATHON
             </div>
-            <div className="font-hoops_brother text-5xl lg:text-8xl mt-4 relative z-10" style={{ color: '#E6F85A' }}>
+            <div className="font-hoops_brother text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl mt-2 sm:mt-4 relative z-10" style={{ color: '#E6F85A' }}>
               IS BACK.
             </div>
           </h1>
-          
-          <img
-            className="z-20 -mt-20 lg:-mt-32"
-            src={cube}
-            alt="Cube"
-            style={{ width: '400px', maxWidth: '90vw' }}
-          />
-          
-          <div className="absolute bottom-24 lg:bottom-28 w-full px-4 lg:px-20 flex justify-between items-center z-30">
+
+          <div className="relative flex items-center justify-center w-full" style={{ minHeight: '180px' }}>
+            <img
+              src={grid}
+              alt="Grid"
+              className="absolute left-1/2 -translate-x-1/2 bottom-[-10px] sm:bottom-[-30px] w-[150vw] sm:w-[120vw] max-w-none pointer-events-none select-none z-10"
+              draggable="false"
+              style={{ minWidth: '320px', maxWidth: '1200px', opacity: 0.7 }}
+            />
+            <img
+              className="z-20 relative -mt-10 sm:-mt-20 lg:-mt-32 w-[70vw] max-w-[400px]"
+              src={cube}
+              alt="Cube"
+              style={{ minWidth: '160px', width: '70vw', maxWidth: '400px' }}
+            />
+          </div>
+
+          <div className="absolute bottom-8 sm:bottom-24 lg:bottom-28 w-full px-2 sm:px-4 lg:px-20 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0 z-30">
             <div
-              className="border border-[#E6F85A] rounded-lg px-6 py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10"
+              className="border border-[#E6F85A] rounded-lg px-4 py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
               style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
               onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 30px rgba(230, 248, 90, 0.5)'}
               onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 20px rgba(230, 248, 90, 0.25)'}
@@ -223,13 +225,13 @@ function LandingPage() {
               }}
             >
               <div>
-                <div className="text-4xl lg:text-5xl font-bold text-custom-white font-satoshi_v">13</div>
-                <div className="text-sm lg:text-base text-custom-white font-satoshi_v">March</div>
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-bold text-custom-white font-satoshi_v">13</div>
+                <div className="text-xs sm:text-sm lg:text-base text-custom-white font-satoshi_v">March</div>
               </div>
             </div>
-            
+
             <div
-              className="border border-[#E6F85A] rounded-lg px-6 py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10"
+              className="border border-[#E6F85A] rounded-lg px-4 py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
               style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
               onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 30px rgba(230, 248, 90, 0.5)'}
               onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 20px rgba(230, 248, 90, 0.25)'}
@@ -242,8 +244,8 @@ function LandingPage() {
               }}
             >
               <div>
-                <div className="text-xl lg:text-2xl font-bold text-custom-white font-satoshi_v">CET</div>
-                <div className="text-xs lg:text-sm text-custom-white font-satoshi_v">Join Us At</div>
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-custom-white font-satoshi_v">CET</div>
+                <div className="text-xs sm:text-sm lg:text-sm text-custom-white font-satoshi_v">Join Us At</div>
               </div>
             </div>
           </div>
