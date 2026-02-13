@@ -185,13 +185,13 @@ function LandingPage() {
 
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] relative mt-6 xs:mt-8 lg:mt-12 w-full px-2 xs:px-4">
           <h1 className="text-center w-full px-1 xs:px-2 sm:px-0">
-            <div className="font-thomeo text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
+            <div className="font-thomeo text-4xl xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[8rem]" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               CET<span className="font-satoshi_v">'</span>S
             </div>
-            <div className="font-thomeo text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-8xl" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
+            <div className="font-thomeo text-4xl xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[8rem]" style={{ color: '#FFFFFA', lineHeight: '1.1' }}>
               BIGGEST HACKATHON
             </div>
-            <div className="font-hoops_brother text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-8xl mt-2 sm:mt-4 relative z-10" style={{ color: '#E6F85A' }}>
+            <div className="font-hoops_brother text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6rem] mt-2 sm:mt-4 relative z-10" style={{ color: '#E6F85A' }}>
               IS BACK.
             </div>
           </h1>
@@ -212,9 +212,9 @@ function LandingPage() {
             />
           </div>
 
-          <div className="w-full px-1 xs:px-2 sm:px-4 lg:px-20 flex flex-row justify-center items-center gap-2 xs:gap-4 mt-6">
+          <div className="absolute bottom-4 xs:bottom-8 sm:bottom-24 lg:bottom-28 w-full px-4 sm:px-8 lg:px-20 flex flex-row justify-between items-center mt-2 sm:mt-8 z-30">
             <div
-              className="border border-[#E6F85A] rounded-lg px-3 py-2 xs:px-4 xs:py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
+              className="border border-[#E6F85A] rounded-lg px-4 py-3 sm:px-8 sm:py-5 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
               style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
               onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 30px rgba(230, 248, 90, 0.5)'}
               onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 20px rgba(230, 248, 90, 0.25)'}
@@ -227,13 +227,13 @@ function LandingPage() {
               }}
             >
               <div>
-                <div className="text-lg xs:text-2xl sm:text-4xl lg:text-5xl font-bold text-custom-white font-satoshi_v">13</div>
-                <div className="text-xs sm:text-sm lg:text-base text-custom-white font-satoshi_v">March</div>
+                <div className="text-2xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-custom-white font-satoshi_v">13</div>
+                <div className="text-base sm:text-lg lg:text-xl text-custom-white font-satoshi_v">March</div>
               </div>
             </div>
 
             <div
-              className="border border-[#E6F85A] rounded-lg px-3 py-2 xs:px-4 xs:py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
+              className="border border-[#E6F85A] rounded-lg px-4 py-3 sm:px-8 sm:py-5 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#E6F85A]/10 bg-opacity-80 backdrop-blur-sm"
               style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
               onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 30px rgba(230, 248, 90, 0.5)'}
               onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 20px rgba(230, 248, 90, 0.25)'}
@@ -246,8 +246,8 @@ function LandingPage() {
               }}
             >
               <div>
-                <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-bold text-custom-white font-satoshi_v">CET</div>
-                <div className="text-xs sm:text-sm lg:text-sm text-custom-white font-satoshi_v">Join Us At</div>
+                <div className="text-2xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-custom-white font-satoshi_v">CET</div>
+                <div className="text-base sm:text-lg lg:text-xl text-custom-white font-satoshi_v">Join Us At</div>
               </div>
             </div>
           </div>
