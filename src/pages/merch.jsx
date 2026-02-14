@@ -9,11 +9,15 @@ export default function MerchSection() {
     <div className="relative flex flex-col items-center justify-center w-full bg-custom-black py-16 px-4 overflow-hidden">
       {/* isthatall.png and merch_mask.png stacked */}
       <div className="relative z-10 flex flex-col items-center w-full">
-        <img src={isThatAll} alt="Is That All?" className="w-64 sm:w-80 md:w-96" />
+        <img 
+  src={isThatAll} 
+  alt="Is That All?" 
+  className="w-64 sm:w-80 md:w-96 relative -left-4"
+/>
         <img 
           src={merchMask} 
           alt="Merch Mask" 
-          className="w-full mt-1"
+          className="w-full -mt-60"
           style={{ width: '100vw', height: 'auto', left: '50%', right: '50%', transform: 'translateX(-50%)', position: 'relative', objectFit: 'fill', opacity: 0.85 }}
         />
         <p className="text-custom-white text-center text-lg sm:text-xl mb-8 max-w-xl mt-4" style={{ fontFamily: 'TacticSans' }}>
@@ -21,7 +25,7 @@ export default function MerchSection() {
         </p>
       </div>
       {/* Devfolio Button */}
-      <div className="relative z-10 w-full flex flex-col items-center mt-8">
+      <div className="relative z-10 w-full flex flex-col items-center -mt-8">
         <div className="w-full max-w-xs mb-4">
           <FigmaRegisterButton />
         </div>
