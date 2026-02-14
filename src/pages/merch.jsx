@@ -14,15 +14,22 @@ export default function MerchSection() {
   alt="Is That All?" 
   className="w-64 sm:w-80 md:w-96 relative -left-4"
 />
+
+
+        <p 
+  className="text-custom-white text-center text-lg sm:text-xl mt-4 mb-4 max-w-xl"
+  style={{ fontFamily: 'TacticSans' }}
+>
+  Every one who gets selected gets Goodies! T-Shirts, stickers, you name it!
+</p>
+
         <img 
           src={merchMask} 
           alt="Merch Mask" 
           className="w-full -mt-60"
           style={{ width: '100vw', height: 'auto', left: '50%', right: '50%', transform: 'translateX(-50%)', position: 'relative', objectFit: 'fill', opacity: 0.85 }}
         />
-        <p className="text-custom-white text-center text-lg sm:text-xl mb-8 max-w-xl mt-4" style={{ fontFamily: 'TacticSans' }}>
-          Every one who gets selected gets Goodies!<br/>T-Shirts, stickers, you name it!
-        </p>
+
       </div>
       {/* Devfolio Button */}
       <div className="relative z-10 w-full flex flex-col items-center -mt-8">
