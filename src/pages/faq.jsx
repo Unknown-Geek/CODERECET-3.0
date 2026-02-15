@@ -49,7 +49,7 @@ export default function FAQSection() {
       text-[#E6F85A]
       leading-none
     ">
-      FREQUENTLY ASKED
+      Frequently Asked
     </h3>
 
     <h2 className="
