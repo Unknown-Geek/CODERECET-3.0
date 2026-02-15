@@ -29,22 +29,10 @@ export default function FAQCard({ number, question, answer }) {
         {/* Back Side */}
         <div className="faq-flip-card-back relative rounded-[44px] px-10 py-12 min-h-[217px] overflow-hidden flex flex-col justify-between"
           style={{
-            background: `linear-gradient(to top right,
-              #E6F85A 0%,
-              #A3A3A3 15%,
-              #212121 30%,
-              #121212 50%,
-              #0e0e0e 70%,
-              #101010 85%,
-              #1b1b1b 100%
-            )`
+            background: `#121212`
           }}
         >
-          <div className="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
-          <span className="font-thomeo text-[200px] text-[#212121] absolute bottom-[-40px] left-6 leading-none opacity-30">
-            {number}
-          </span>
-          <p className="font-tactic text-[24px] text-[#212121] text-left relative z-10 max-w-[360px] ml-auto">
+          <p className="font-tactic text-[24px] text-[#FFFFFA] text-left relative z-10 max-w-[360px] ml-auto">
             {answer}
           </p>
         </div>
