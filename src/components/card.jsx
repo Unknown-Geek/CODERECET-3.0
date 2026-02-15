@@ -24,6 +24,7 @@ export default function FAQCard({ number, question, answer }) {
           </span>
           <p className="font-tactic text-[29px] text-[#FFFFFA] text-right relative z-10 max-w-[360px] ml-auto">
             {question}
+            
           </p>
         </div>
         {/* Back Side */}
