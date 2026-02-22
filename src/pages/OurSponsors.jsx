@@ -78,7 +78,7 @@ function OurSponsors() {
                 innerClassName="px-8 md:px-12"
               >
                 <img
-                  src="/assets/sponsor/Armada.png"
+                  src="/assets/logo/Armada.svg"
                   alt="Armada"
                   className="w-[78%] md:w-[62%] max-w-[768px] h-auto object-contain"
                   style={{ filter: "brightness(0) saturate(100%) invert(100%)" }}

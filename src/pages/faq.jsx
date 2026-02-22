@@ -1,7 +1,4 @@
 import { useState } from "react";
-
-
-
 import FAQCard from "../components/card";
 
 const faqs = [
@@ -41,7 +38,7 @@ const faqs = [
 ];
 
 export default function FAQSection() {
-  return(
+  return (
     <section
       className="bg-custom-black px-10 py-24 relative"
       style={{
@@ -57,42 +54,35 @@ export default function FAQSection() {
 
       <div className="mb-20 relative z-10">
 
-    <h3 className="
+        <h3 className="
       font-hoops_brother
       text-[47px]
       text-custom-secondary
       leading-none
     ">
-      Frequently Asked
-    </h3>
+          Frequently Asked
+        </h3>
 
-    <h2 className="
+        <h2 className="
       font-thomeo
       text-[76px]
       uppercase
       text-custom-white
       leading-none
     ">
-      QUESTIONS
-    </h2>
+          QUESTIONS
+        </h2>
 
-  </div>
-
-  <div className="
-  grid
-  gap-y-12
-  gap-x-10
-  md:grid-cols-2
-"></div>
+      </div>
 
 
-      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10">
+      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10 lg:m-40">
         {faqs.map((faq, index) => (
-          <FAQCard 
-            key={index} 
-            number={faq.number} 
-            question={faq.question} 
-            answer={faq.answer} 
+          <FAQCard
+            key={index}
+            number={faq.number}
+            question={faq.question}
+            answer={faq.answer}
           />
         ))}
       </div>
