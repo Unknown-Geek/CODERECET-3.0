@@ -39,7 +39,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="bg-custom-black px-10 py-24 relative overflow-hidden">
+    <section className="bg-custom-black px-10 py-40 relative overflow-hidden">
       <img
         src="/assets/tunnel.png"
         alt="Tunnel Background"
@@ -55,7 +55,7 @@ export default function FAQSection() {
         </h2>
       </div>
 
-      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10 lg:m-20 px-2 lg:px-12">
+      <div className="grid gap-y-6 gap-x-6 md:grid-cols-2 font-tactic_sans relative z-10 lg:mx-8  ">
         {faqs.map((faq, index) => (
           <FAQCard
             key={index}
