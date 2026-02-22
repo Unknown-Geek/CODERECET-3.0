@@ -47,7 +47,7 @@ function OurSponsors() {
       className="bg-custom-black w-full"
       aria-label="Our Sponsors"
     >
-      <div className="relative border-custom-gray border-y px-6 py-16 md:py-20">
+      <div className="relative  px-6 py-16 md:py-20 lg:border-custom-gray lg:border-y lg:-mt-40 lg:py-40">
         <div className="mx-auto max-w-[1240px]">
           <div className="max-w-[442px] leading-none">
             <p
@@ -78,7 +78,7 @@ function OurSponsors() {
                 innerClassName="px-8 md:px-12"
               >
                 <img
-                  src="/assets/sponsor/Armada.png"
+                  src="/assets/logo/Armada.svg"
                   alt="Armada"
                   className="w-[78%] md:w-[62%] max-w-[768px] h-auto object-contain"
                   style={{ filter: "brightness(0) saturate(100%) invert(100%)" }}
@@ -113,7 +113,7 @@ function OurSponsors() {
 
               <SponsorBox className="h-[140px] sm:h-[160px] md:h-[178px]" innerClassName="p-4">
                 <img
-                  src="/assets/sponsor/BuildClub.png"
+                  src="/assets/sponsor/buildClub.png"
                   alt="BuildClub"
                   className="h-[68px] w-[68px] sm:h-[92px] sm:w-[92px] md:h-[122px] md:w-[122px] object-cover rounded-2xl"
                 />

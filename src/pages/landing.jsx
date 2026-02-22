@@ -37,17 +37,17 @@ function LandingPage() {
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
 
-        <div className="flex justify-center">
-          <nav className="flex justify-between items-center mt-16 w-full z-50 px-4 lg:px-8">
+        <div className="flex justify-center w-full fixed top-0 sm:top-6 lg:top-8 z-50 px-4">
+          <nav className="flex justify-between items-center w-full max-w-[1340px] h-[64px] bg-black/10 backdrop-blur-md border border-white/10 rounded-full px-6 lg:px-10">
             {/* Left: Nav Menu */}
-            <div className="flex-1">
-              <ul className="sm:flex hidden text-base lg:text-lg font-tactic_sans space-x-4 lg:space-x-8 text-custom-white items-center">
+            <div className="flex-1 flex justify-start items-center">
+              <ul className="sm:flex hidden text-xs lg:text-sm font-tactic_sans space-x-6 lg:space-x-10 text-[#fffffa] items-center tracking-wide">
                 <li>
                   <Link
                     to="about"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
                     About
                   </Link>
@@ -57,48 +57,58 @@ function LandingPage() {
                     to="countdown"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
                     Timeline
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="gallery"
+                    to="perks"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
-                    Gallery
+                    Perks
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="contact"
+                    to="prizes"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
-                    Contact
+                    Prizes
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="sponsors"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
+                  >
+                    Sponsors
                   </Link>
                 </li>
               </ul>
             </div>
-            
+
             {/* Center: Logo */}
-            <div className="cursor-pointer flex-shrink-0 relative">
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-green-400 opacity-30 blur-3xl rounded-full"></div>
+            <div className="cursor-pointer flex-shrink-0 flex items-center justify-center relative h-full">
               <img
-                src="/assets/logo/Logo copy.png"
-                className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 relative z-10"
+                src="/assets/logo/CodeRecetXArmada.svg"
+                className="w-auto h-[24px] lg:h-[30px] relative z-10"
+                alt="CodeRecet X Armada"
               />
             </div>
-            
+
             {/* Right: Register Button */}
             <div className="flex-1 flex justify-end items-center gap-4">
               <div className="hidden sm:block">
-                <div className="rounded-full px-4 py-2 cursor-pointer hover:bg-opacity-10 transition-colors" style={{ border: '1px solid rgba(230, 248, 90, 0.3)' }}>
-                  <span className="font-tactic_sans text-custom-white text-sm lg:text-base">
+                <div className="rounded-full px-6 py-2 cursor-pointer border border-white/20 hover:bg-white/10 transition-colors">
+                  <span className="font-tactic_sans text-[#fffffa] text-xs lg:text-sm tracking-wide">
                     Register Now - It's Free
                   </span>
                 </div>
@@ -107,15 +117,14 @@ function LandingPage() {
                 onClick={() => setIsOpen(!isOpen)}
                 className="inline-block sm:hidden text-custom-white z-50 focus:outline-none"
               >
-                <div className="w-10 h-10 bg-custom-black rounded-sm flex items-center justify-center">
+                <div className="w-8 h-8 bg-transparent flex items-center justify-center">
                   <img src={isOpen ? "/assets/close_white.svg" : "/assets/menu_white.svg"} className="w-6 h-6" />
                 </div>
               </button>
             </div>
             <div
-              className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-custom-black z-40 shadow-lg transform transition-transform duration-300 ${
-                isOpen ? "translate-x-0" : "-translate-x-full"
-              }`}
+              className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-custom-black z-40 shadow-lg transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"
+                }`}
             >
               <ul className="space-y-6 flex flex-col p-8 text-custom-white font-tactic_sans text-xl">
                 <li className="text-left">
@@ -142,24 +151,35 @@ function LandingPage() {
                 </li>
                 <li className="text-left">
                   <Link
-                    to="gallery"
+                    to="perks"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
-                    Gallery
+                    Perks
                   </Link>
                 </li>
                 <li className="text-left">
                   <Link
-                    to="contact"
+                    to="prizes"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
-                    Contact
+                    Prizes
+                  </Link>
+                </li>
+                <li className="text-left">
+                  <Link
+                    to="sponsors"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Sponsors
                   </Link>
                 </li>
                 {/* Mobile Register */}
@@ -243,7 +263,7 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="lg:h-20 absolute bottom-0 w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray">
             <div className="overflow-hidden relative">
               <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2 pt-3">
@@ -335,11 +355,10 @@ function LandingPage() {
                   {Array.from({ length: 31 }, (_, i) => (
                     <div
                       key={i}
-                      className={`p-2 rounded-md ${
-                        i + 1 === 13
-                          ? 'bg-custom-secondary text-black font-bold'
-                          : 'hover:bg-[#3a3a3a]'
-                      }`}
+                      className={`p-2 rounded-md ${i + 1 === 13
+                        ? 'bg-custom-secondary text-black font-bold'
+                        : 'hover:bg-[#3a3a3a]'
+                        }`}
                     >
                       {i + 1}
                     </div>

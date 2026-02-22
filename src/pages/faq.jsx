@@ -1,7 +1,4 @@
 import { useState } from "react";
-
-
-
 import FAQCard from "../components/card";
 
 const faqs = [
@@ -9,18 +6,18 @@ const faqs = [
     number: "01",
     question: "What is the theme of the hackathon?",
     answer:
-      "The theme is 'Open Innovation', which means you are free to do the project on any topic that would generally impact the society positively.",
+      "The theme and problem statements are provided by Armada. You will work on solving real-world challenges curated by Armada.",
   },
   {
     number: "02",
-    question: "Should the project be Free and Open Source?",
-    answer: "Yes. The project should be Free and Open Source.",
+    question: "Who owns the code submitted?",
+    answer: "All code and projects submitted belong to Armada.",
   },
   {
     number: "03",
-    question: "But... I’ve never participated in a hackathon",
+    question: "But... I've never participated in a hackathon",
     answer:
-      "That’s okay! We welcome hackers of all skill levels. We’ll have workshops and mentors to help you learn and build something awesome.",
+      "That's okay! We welcome hackers of all skill levels. We'll have workshops and mentors to help you learn and build something awesome.",
   },
   {
     number: "04",
@@ -41,63 +38,33 @@ const faqs = [
 ];
 
 export default function FAQSection() {
-  return(
-    <section
-      className="bg-custom-black px-10 py-24 relative"
-      style={{
-        overflow: 'hidden',
-      }}
-    >
+  return (
+    <section className="bg-custom-black px-10 py-40 relative overflow-hidden">
       <img
         src="/assets/tunnel.png"
         alt="Tunnel Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        style={{ pointerEvents: 'none', opacity: 0.18 }}
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-[0.18] pointer-events-none"
       />
 
-      <div className="mb-20 relative z-10">
+      <div className="mb-20 relative z-10 flex flex-col items-start px-2 lg:px-12">
+        <h3 className="font-hoops_brother text-[47px] text-custom-secondary leading-none">
+          Frequently Asked
+        </h3>
+        <h2 className="font-thomeo text-[76px] uppercase text-custom-white leading-none">
+          QUESTIONS
+        </h2>
+      </div>
 
-    <h3 className="
-      font-hoops_brother
-      text-[47px]
-      text-custom-secondary
-      leading-none
-    ">
-      Frequently Asked
-    </h3>
-
-    <h2 className="
-      font-thomeo
-      text-[76px]
-      uppercase
-      text-custom-white
-      leading-none
-    ">
-      QUESTIONS
-    </h2>
-
-  </div>
-
-  <div className="
-  grid
-  gap-y-12
-  gap-x-10
-  md:grid-cols-2
-"></div>
-
-
-      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10">
+      <div className="grid gap-y-6 gap-x-6 md:grid-cols-2 font-tactic_sans relative z-10 lg:mx-8  ">
         {faqs.map((faq, index) => (
-          <FAQCard 
-            key={index} 
-            number={faq.number} 
-            question={faq.question} 
-            answer={faq.answer} 
+          <FAQCard
+            key={index}
+            number={faq.number}
+            question={faq.question}
+            answer={faq.answer}
           />
         ))}
       </div>
     </section>
-
-
   );
 }

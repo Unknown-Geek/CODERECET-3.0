@@ -4,6 +4,9 @@ import IntroPage from "./pages/intro"
 import LandingPage from "./pages/landing"
 import Countdown from "./pages/countdown"
 import AboutUs from "./pages/aboutus"
+import Perks from "./pages/perks"
+import Tagline from "./pages/tagline"
+import Prizes from "./pages/prizes"
 import Footer from "./pages/Footer"
 import OurSponsors from "./pages/OurSponsors"
 import MerchSection from "./pages/merch"
@@ -50,13 +53,16 @@ function App() {
         animate={{ opacity: showIntro ? 0 : 1 }}
         transition={{ duration: 0.8, delay: showIntro ? 0 : 0.3 }}
       >
-        <LandingPage/>
-        <AboutUs/>
-        <Countdown/>
-        <OurSponsors/>
-        <MerchSection/>
-        <FAQSection/>
-        <Footer/>
+        <LandingPage />
+        <AboutUs />
+        <Countdown />
+        <Tagline />
+        <Perks />
+        <Prizes />
+        <OurSponsors />
+        <MerchSection />
+        <FAQSection />
+        <Footer />
       </motion.div>
     </div>
   )
