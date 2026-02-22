@@ -15,7 +15,8 @@
 }
 
 .faq-flip-card:hover .faq-flip-card-inner,
-.faq-flip-card:focus-within .faq-flip-card-inner {
+.faq-flip-card:focus-within .faq-flip-card-inner,
+.faq-flip-card.flipped .faq-flip-card-inner {
   transform: rotateY(180deg);
 }
 

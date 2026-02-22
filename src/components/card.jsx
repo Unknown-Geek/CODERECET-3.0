@@ -1,8 +1,13 @@
 import { useState } from "react";
 
 export default function FAQCard({ number, question, answer }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
-    <div className="faq-flip-card">
+    <div
+      className={`faq-flip-card ${isFlipped ? 'flipped' : ''}`}
+      onClick={() => setIsFlipped(!isFlipped)}
+    >
       <div className="faq-flip-card-inner">
         {/* Front Side */}
         <div className="faq-flip-card-front relative rounded-[44px] px-10 py-12 min-h-[217px] overflow-hidden flex flex-col justify-between"
@@ -22,9 +27,8 @@ export default function FAQCard({ number, question, answer }) {
           <span className="font-thomeo text-[200px] text-custom-secondary absolute bottom-[-40px] left-6 leading-none">
             {number}
           </span>
-          <p className="font-tactic text-[29px] text-custom-white text-right relative z-10 max-w-[360px] ml-auto">
+          <p className="font-tactic_sans text-lg md:text-xl text-custom-white text-right relative z-10 max-w-[360px] ml-auto">
             {question}
-            
           </p>
         </div>
         {/* Back Side */}
@@ -33,7 +37,7 @@ export default function FAQCard({ number, question, answer }) {
             background: `#121212`
           }}
         >
-          <p className="font-tactic text-[24px] text-custom-white text-center w-full max-w-[360px] mx-auto">
+          <p className="font-tactic_sans text-base md:text-lg text-custom-white text-center w-full max-w-[360px] mx-auto">
             {answer}
           </p>
         </div>

@@ -39,44 +39,23 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section
-      className="bg-custom-black px-10 py-24 relative"
-      style={{
-        overflow: 'hidden',
-      }}
-    >
+    <section className="bg-custom-black px-10 py-24 relative overflow-hidden">
       <img
         src="/assets/tunnel.png"
         alt="Tunnel Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        style={{ pointerEvents: 'none', opacity: 0.18 }}
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-[0.18] pointer-events-none"
       />
 
-      <div className="mb-20 relative z-10">
-
-        <h3 className="
-      font-hoops_brother
-      text-[47px]
-      text-custom-secondary
-      leading-none
-    ">
+      <div className="mb-20 relative z-10 flex flex-col items-start px-2 lg:px-12">
+        <h3 className="font-hoops_brother text-[47px] text-custom-secondary leading-none">
           Frequently Asked
         </h3>
-
-        <h2 className="
-      font-thomeo
-      text-[76px]
-      uppercase
-      text-custom-white
-      leading-none
-    ">
+        <h2 className="font-thomeo text-[76px] uppercase text-custom-white leading-none">
           QUESTIONS
         </h2>
-
       </div>
 
-
-      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10 lg:m-40">
+      <div className="grid gap-y-12 gap-x-10 md:grid-cols-2 font-tactic_sans relative z-10 lg:m-20 px-2 lg:px-12">
         {faqs.map((faq, index) => (
           <FAQCard
             key={index}
@@ -87,7 +66,5 @@ export default function FAQSection() {
         ))}
       </div>
     </section>
-
-
   );
 }
