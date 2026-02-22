@@ -54,6 +54,26 @@ function LandingPage() {
                 </li>
                 <li>
                   <Link
+                    to="countdown"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
+                  >
+                    Timeline
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="perks"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer hover:text-custom-secondary transition-colors"
+                  >
+                    Perks
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="prizes"
                     smooth={true}
                     duration={500}
@@ -64,22 +84,12 @@ function LandingPage() {
                 </li>
                 <li>
                   <Link
-                    to="gallery"
+                    to="sponsors"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
-                    Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    className="cursor-pointer hover:text-custom-secondary transition-colors"
-                  >
-                    Contact
+                    Sponsors
                   </Link>
                 </li>
               </ul>
@@ -141,24 +151,35 @@ function LandingPage() {
                 </li>
                 <li className="text-left">
                   <Link
-                    to="gallery"
+                    to="perks"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
-                    Gallery
+                    Perks
                   </Link>
                 </li>
                 <li className="text-left">
                   <Link
-                    to="contact"
+                    to="prizes"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
-                    Contact
+                    Prizes
+                  </Link>
+                </li>
+                <li className="text-left">
+                  <Link
+                    to="sponsors"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Sponsors
                   </Link>
                 </li>
                 {/* Mobile Register */}
