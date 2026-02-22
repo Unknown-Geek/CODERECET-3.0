@@ -6,21 +6,7 @@ export default function MerchSection() {
   return (
     // Added min-h to ensure the section is tall enough to show the mask nicely
     <div className="relative flex flex-col items-center justify-center w-full bg-custom-black py-16 px-4 overflow-visible min-h-[600px]">
-      
-      {/* --- FIX START --- */}
-      <img 
-        src="/assets/merch_mask.png" 
-        alt="" 
-        // Changed to fill the container and anchor to bottom
-        className="inset-0 w-full h-full object-cover object-bottom pointer-events-none"
-        style={{ 
-            mixBlendMode: 'screen',
-            zIndex: 0 
-        }} 
-      />
-      {/* --- FIX END --- */}
-
-      <div className="relative z-10 flex flex-col items-center w-full -mt-80">
+      <div className="relative z-10 flex flex-col items-center w-full">
         <img 
           src="/assets/isthatall.png" 
           alt="Is That All?" 
@@ -34,6 +20,19 @@ export default function MerchSection() {
           Every one who gets selected gets Goodies! T-Shirts, stickers, you name it!
         </p>
       </div>
+
+      {/* --- FIX START --- */}
+      <img 
+        src="/assets/merch_mask.png" 
+        alt="" 
+        // Changed to fill the container and anchor to bottom
+        className="inset-0 w-full h-full object-cover object-bottom pointer-events-none"
+        style={{ 
+            mixBlendMode: 'screen',
+            zIndex: 0 
+        }} 
+      />
+      {/* --- FIX END --- */}
 
       <div className="relative z-10 w-full flex flex-col items-center">
         <div className="w-full max-w-xs mb-4">
