@@ -4,7 +4,7 @@ export default function Prizes() {
   return (
     <section
       id="prizes"
-      className="bg-custom-black w-full py-16 md:py-24 overflow-hidden"
+      className="bg-custom-black w-full py-16 md:py-24 overflow-hidden lg:-mt-20"
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-[100px]">
         {/* Section Title */}
@@ -18,7 +18,7 @@ export default function Prizes() {
         </div>
 
         {/* Prize Images */}
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:-mt-20">
           <img
             src="/assets/prizes/First.png"
             alt="1st Prize"

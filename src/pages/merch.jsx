@@ -28,7 +28,7 @@ export default function MerchSection() {
         // Changed to fill the container and anchor to bottom
         className="inset-0 w-full h-full object-cover object-bottom pointer-events-none -mt-80"
         style={{ 
-            mixBlendMode: 'screen',
+            mixBlendMode: 'lighten',
             zIndex: 0 
         }} 
       />

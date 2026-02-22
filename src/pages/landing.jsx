@@ -54,12 +54,12 @@ function LandingPage() {
                 </li>
                 <li>
                   <Link
-                    to="countdown"
+                    to="prizes"
                     smooth={true}
                     duration={500}
                     className="cursor-pointer hover:text-custom-secondary transition-colors"
                   >
-                    Timeline
+                    Prizes
                   </Link>
                 </li>
                 <li>
