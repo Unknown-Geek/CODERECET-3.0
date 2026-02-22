@@ -9,18 +9,18 @@ const faqs = [
     number: "01",
     question: "What is the theme of the hackathon?",
     answer:
-      "The theme is 'Open Innovation', which means you are free to do the project on any topic that would generally impact the society positively.",
+      "The theme and problem statements are provided by Armada. You will work on solving real-world challenges curated by Armada.",
   },
   {
     number: "02",
-    question: "Should the project be Free and Open Source?",
-    answer: "Yes. The project should be Free and Open Source.",
+    question: "Who owns the code submitted?",
+    answer: "All code and projects submitted belong to Armada.",
   },
   {
     number: "03",
-    question: "But... I’ve never participated in a hackathon",
+    question: "But... I've never participated in a hackathon",
     answer:
-      "That’s okay! We welcome hackers of all skill levels. We’ll have workshops and mentors to help you learn and build something awesome.",
+      "That's okay! We welcome hackers of all skill levels. We'll have workshops and mentors to help you learn and build something awesome.",
   },
   {
     number: "04",
