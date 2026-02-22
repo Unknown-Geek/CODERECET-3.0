@@ -44,7 +44,7 @@ export default function MerchSection() {
       />
       {/* --- FIX END --- */}
 
-      <div className="relative z-10 w-full flex flex-col items-center -mt-80">
+      <div className="relative z-10 w-full flex flex-col items-center -mt-60">
         <div className="w-full max-w-xs mb-4 flex justify-center">
           <div
             className="apply-button"
