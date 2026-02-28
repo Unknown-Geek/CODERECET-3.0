@@ -8,7 +8,7 @@ export default function FAQCard({ number, question, answer }) {
       <div 
         className={`faq-flip-card-inner relative transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
       >
-        {/* Front Side */}
+        
         <div
           className="faq-flip-card-front [backface-visibility:hidden] relative rounded-[44px] px-10 py-12 min-h-[217px] overflow-hidden flex flex-col justify-between cursor-pointer"
           style={{
@@ -25,11 +25,10 @@ export default function FAQCard({ number, question, answer }) {
           </p>
         </div>
 
-        {/* Back Side */}
+        
         <div
           className="faq-flip-card-back [backface-visibility:hidden] [transform:rotateY(180deg)] absolute inset-0 flex items-center justify-center rounded-[44px] px-10 py-12 min-h-[217px] overflow-hidden cursor-pointer bg-[#121212]"
           onClick={() => {
-            // Force reflow to ensure immediate transition
             const card = document.activeElement;
             if (card) card.offsetHeight;
             setIsFlipped(false);
