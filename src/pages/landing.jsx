@@ -200,7 +200,7 @@ Add overflow-x-hidden pointer-events-none select-none z-10"
                     data-blendy-from="calendar"
                   >
                     <div>
-                      <div className="text-2xl sm:text-4xl lg:text-5xl font-bold text-custom-white font-thomeo">13</div>
+                      <div className="text-2xl sm:text-4xl lg:text-5xl font-bold text-custom-white font-thomeo">27</div>
                       <div className="text-xs sm:text-sm lg:text-base text-custom-white font-tactic_sans">March</div>
                     </div>
                   </div>
