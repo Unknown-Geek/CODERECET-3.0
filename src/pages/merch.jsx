@@ -18,7 +18,7 @@ export default function MerchSection() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full bg-custom-black py-20 md:py-40 px-4 min-h-[500px] md:min-h-[600px] overflow-hidden">
+    <div className="relative isolate flex flex-col items-center justify-center w-full bg-custom-black py-20 md:py-40 px-4 min-h-[500px] md:min-h-[600px] overflow-hidden">
       
       {/* Background Mask - Fixed absolute positioning so it doesn't break document flow */}
       <img
@@ -39,7 +39,7 @@ export default function MerchSection() {
         <img
           src="/assets/merch/isthatall.webp"
           alt="Is That All?"
-          className="w-48 sm:w-80 md:w-96 drop-shadow-lg"
+          className="relative z-20 w-48 sm:w-80 md:w-96 drop-shadow-lg"
         />
         
         {/* Subtitle */}
