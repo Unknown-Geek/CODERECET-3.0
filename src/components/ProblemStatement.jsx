@@ -163,7 +163,7 @@ function ProblemStatement() {
   };
 
   return (
-    <section className="problem-section py-12 md:py-20 bg-[#f8fafc]" id="problem-statements">
+    <section className="problem-section py-12 md:py-20 bg-[#f8fafc] overflow-x-hidden" id="problem-statements">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-[100px]">
         <div className="mb-12 leading-none">
           <span className="font-hoops_brother text-custom-secondary text-[36px] md:text-[47px] block">PROBLEM</span>
