@@ -163,13 +163,14 @@ function ProblemStatement() {
   };
 
   return (
-    <section className="problem-section px-6 py-12 md:py-20 bg-[#f8fafc]" id="problem-statements">
-      <div className="mb-12 leading-none">
-        <span className="font-hoops_brother text-custom-secondary text-[36px] md:text-[47px] block">PROBLEM</span>
-        <span className="font-thomeo text-white text-[56px] md:text-[76px] block -mt-2">STATEMENTS</span>
-      </div>
-      
-      <div className="relative max-w-[1440px] mx-auto">
+    <section className="problem-section py-12 md:py-20 bg-[#f8fafc]" id="problem-statements">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-[100px]">
+        <div className="mb-12 leading-none">
+          <span className="font-hoops_brother text-custom-secondary text-[36px] md:text-[47px] block">PROBLEM</span>
+          <span className="font-thomeo text-white text-[56px] md:text-[76px] block -mt-2">STATEMENTS</span>
+        </div>
+        
+        <div className="relative">
         {/* Left Arrow */}
         {showLeftArrow && (
           <button
@@ -218,15 +219,16 @@ function ProblemStatement() {
             </svg>
           </button>
         )}
-      </div>
+        </div>
 
-      <div className="flex justify-center mt-12">
-        <button
-          className="glassy-btn px-8 py-3 rounded-full text-white font-bold font-tactic_sans text-lg bg-gradient-to-br from-[#232323] to-[#1a1a1a] border border-custom-secondary backdrop-blur-md shadow-lg hover:scale-105 transition-transform"
-          onClick={() => navigate('/all-statements')}
-        >
-          VIEW STATEMENTS IN DETAIL
-        </button>
+        <div className="flex justify-center mt-12">
+          <button
+            className="glassy-btn px-8 py-3 rounded-full text-white font-bold font-tactic_sans text-lg bg-gradient-to-br from-[#232323] to-[#1a1a1a] border border-custom-secondary backdrop-blur-md shadow-lg hover:scale-105 transition-transform"
+            onClick={() => navigate('/all-statements')}
+          >
+            VIEW STATEMENTS IN DETAIL
+          </button>
+        </div>
       </div>
     </section>
   );
