@@ -90,7 +90,15 @@ function LandingPage() {
               </button>
 
               <div className="flex-1 flex justify-end items-center gap-4">
-                <div className="hidden sm:block">
+                <div className="hidden sm:flex items-center gap-3">
+                  <RouterLink
+                    to="/registration-instructions"
+                    aria-label="Registration instructions"
+                    title="Registration Instructions"
+                    className="rounded-full w-10 h-10 cursor-pointer border border-white/20 hover:bg-white/10 transition-colors inline-flex items-center justify-center"
+                  >
+                    <span className="font-tactic_sans text-[#fffffa] text-base leading-none">i</span>
+                  </RouterLink>
                   <a href="https://code-recet-3.devfolio.co/application" target="_blank" rel="noopener noreferrer" className="rounded-full px-6 py-2 cursor-pointer border border-white/20 hover:bg-white/10 transition-colors inline-block">
                     <span className="font-tactic_sans text-[#fffffa] text-xs lg:text-sm tracking-wide">
                       Register Now - It's Free
