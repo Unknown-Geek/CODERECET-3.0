@@ -6,7 +6,7 @@ const Countdown = () => {
 
   const calculateTimeLeft = () => {
     const targetDate = new Date(
-      "March 27, 2026 17:00:00"
+      "March 27, 2026 16:00:00"
     );
     const now = new Date();
     const difference = targetDate - now;
