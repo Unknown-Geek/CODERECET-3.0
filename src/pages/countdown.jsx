@@ -6,7 +6,7 @@ const Countdown = () => {
 
   const calculateTimeLeft = () => {
     const targetDate = new Date(
-      "March 13, 2026 10:00:00"
+      "March 27, 2026 16:00:00"
     );
     const now = new Date();
     const difference = targetDate - now;
@@ -45,68 +45,68 @@ const Countdown = () => {
       className="bg-custom-black px-4 sm:px-8 lg:px-24 py-10 sm:py-16 lg:py-24"
     >
       <div
-        className="w-full rounded-[24px] lg:rounded-[32px] overflow-hidden pt-4 pb-6 px-4 lg:pt-[16px] lg:pb-[29px] lg:px-[16px]"
+        className="w-full rounded-[16.631px] overflow-hidden pt-4 pb-6 px-4 lg:pt-[16.631px] lg:pb-[29.105px] lg:px-[16.631px]"
         style={{
           border: '1.039px solid #e6f85a',
-          // backgroundImage:
-          //   'linear-gradient(174.058deg, rgba(250, 250, 250, 0.3) 151.95%, rgba(8, 8, 8, 0.3) 55.324%, rgba(107, 107, 107, 0.3) 202.54%)',
+          backgroundImage:
+            'linear-gradient(174.058deg, rgba(250, 250, 250, 0.3) 151.95%, rgba(8, 8, 8, 0.3) 55.324%, rgba(107, 107, 107, 0.3) 202.54%)',
         }}
       >
-        <div className="flex justify-between md:justify-center items-center w-full md:gap-4 lg:gap-[30px] xl:gap-[40px]">
+        <div className="flex justify-between items-center w-full">
           {/* Days */}
-          <div className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[180px] xl:w-[220px] flex flex-col items-center justify-center ">
-            <div className="font-thomeo text-5xl sm:text-7xl md:text-8xl lg:text-[180px] xl:text-[200px] text-[#fffffa] leading-none tabular-nums text-center w-full">
+          <div className="flex-1 flex flex-col items-center justify-center pb-2 sm:pb-4 lg:pb-[24px]">
+            <div className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-white leading-none">
               {timeLeft.days}
             </div>
-            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-base lg:text-[24px] xl:text-[29px] text-[#fffffa] leading-none mt-2 lg:mt-4 tracking-widest text-center">
+            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-lg lg:text-[29px] text-custom-white leading-none">
               DAYS
             </div>
           </div>
 
           {/* Colon */}
-          <div className="flex flex-col items-center justify-center pb-6 sm:pb-8 lg:pb-[45px] gap-2 lg:gap-[28px]">
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
+          <div className="flex flex-col items-center justify-center pb-6 sm:pb-10 lg:pb-[45px]">
+            <span className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-secondary leading-none">:</span>
+            <span className="font-satoshi_v text-[10px] sm:text-sm md:text-lg lg:text-[33.263px] opacity-0 leading-none">HOURS</span>
           </div>
 
           {/* Hours */}
-          <div className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[180px] xl:w-[220px] flex flex-col items-center justify-center">
-            <div className="font-thomeo text-5xl sm:text-7xl md:text-8xl lg:text-[180px] xl:text-[200px] text-[#fffffa] leading-none tabular-nums text-center w-full">
+          <div className="flex-1 flex flex-col items-center justify-center pb-2 sm:pb-4 lg:pb-[24px]">
+            <div className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-white leading-none">
               {timeLeft.hours}
             </div>
-            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-base lg:text-[24px] xl:text-[29px] text-[#fffffa] leading-none mt-2 lg:mt-4 tracking-widest text-center">
+            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-lg lg:text-[29px] text-custom-white leading-none">
               HOURS
             </div>
           </div>
 
           {/* Colon */}
-          <div className="flex flex-col items-center justify-center pb-6 sm:pb-8 lg:pb-[45px] gap-2 lg:gap-[28px]">
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
+          <div className="flex flex-col items-center justify-center pb-6 sm:pb-10 lg:pb-[45px]">
+            <span className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-secondary leading-none">:</span>
+            <span className="font-satoshi_v text-[10px] sm:text-sm md:text-lg lg:text-[33.263px] opacity-0 leading-none">HOURS</span>
           </div>
 
           {/* Minutes */}
-          <div className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[180px] xl:w-[220px] flex flex-col items-center justify-center">
-            <div className="font-thomeo text-5xl sm:text-7xl md:text-8xl lg:text-[180px] xl:text-[200px] text-[#fffffa] leading-none tabular-nums text-center w-full">
+          <div className="flex-1 flex flex-col items-center justify-center pb-2 sm:pb-4 lg:pb-[24px]">
+            <div className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-white leading-none">
               {timeLeft.minutes}
             </div>
-            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-base lg:text-[24px] xl:text-[29px] text-[#fffffa] leading-none mt-2 lg:mt-4 tracking-widest text-center">
+            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-lg lg:text-[29px] text-custom-white leading-none">
               MINUTES
             </div>
           </div>
 
           {/* Colon */}
-          <div className="flex flex-col items-center justify-center pb-6 sm:pb-8 lg:pb-[45px] gap-2 lg:gap-[28px]">
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-4 lg:h-4 xl:w-5 xl:h-5 rounded-full bg-custom-secondary"></div>
+          <div className="flex flex-col items-center justify-center pb-6 sm:pb-10 lg:pb-[45px]">
+            <span className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-secondary leading-none">:</span>
+            <span className="font-satoshi_v text-[10px] sm:text-sm md:text-lg lg:text-[33.263px] opacity-0 leading-none">HOURS</span>
           </div>
 
           {/* Seconds */}
-          <div className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[180px] xl:w-[220px] flex flex-col items-center justify-center">
-            <div className="font-thomeo text-5xl sm:text-7xl md:text-8xl lg:text-[180px] xl:text-[200px] text-[#fffffa] leading-none tabular-nums text-center w-full">
+          <div className="flex-1 flex flex-col items-center justify-center pb-2 sm:pb-4 lg:pb-[24px]">
+            <div className="font-thomeo text-5xl sm:text-7xl md:text-9xl lg:text-[200px] text-custom-white leading-none">
               {timeLeft.seconds}
             </div>
-            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-base lg:text-[24px] xl:text-[29px] text-[#fffffa] leading-none mt-2 lg:mt-4 tracking-widest text-center">
+            <div className="font-tactic_sans text-[10px] sm:text-sm md:text-lg lg:text-[29px] text-custom-white leading-none">
               SECONDS
             </div>
           </div>
