@@ -1,6 +1,8 @@
 import { useState } from "react";
 import FAQCard from "../components/card";
 
+
+
 const faqs = [
   {
     number: "01",
