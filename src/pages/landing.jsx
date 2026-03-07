@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { createBlendy } from "blendy";
 
 
@@ -89,7 +90,15 @@ function LandingPage() {
               </button>
 
               <div className="flex-1 flex justify-end items-center gap-4">
-                <div className="hidden sm:block">
+                <div className="hidden sm:flex items-center gap-3">
+                  <RouterLink
+                    to="/registration-instructions"
+                    aria-label="Registration instructions"
+                    title="Registration Instructions"
+                    className="rounded-full w-10 h-10 cursor-pointer border border-white/20 hover:bg-white/10 transition-colors inline-flex items-center justify-center"
+                  >
+                    <span className="font-tactic_sans text-[#fffffa] text-base leading-none">i</span>
+                  </RouterLink>
                   <a href="https://code-recet-3.devfolio.co/application" target="_blank" rel="noopener noreferrer" className="rounded-full px-6 py-2 cursor-pointer border border-white/20 hover:bg-white/10 transition-colors inline-block">
                     <span className="font-tactic_sans text-[#fffffa] text-xs lg:text-sm tracking-wide">
                       Register Now - It's Free
@@ -154,6 +163,18 @@ function LandingPage() {
                         </span>
                       </a>
                     </li>
+                    <li className="text-left mt-2">
+                      <RouterLink
+                        to="/registration-instructions"
+                        className="rounded-full px-4 py-2 cursor-pointer inline-block"
+                        style={{ border: '1px solid rgba(230, 248, 90, 0.3)' }}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <span className="font-tactic_sans text-custom-white text-base">
+                          Registration Instructions
+                        </span>
+                      </RouterLink>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -191,7 +212,6 @@ Add overflow-x-hidden pointer-events-none select-none z-10"
 
               <div className="absolute left-0 right-0 mx-auto flex flex-row flex-wrap justify-between items-center px-4 sm:px-10 top-[60%] md:top-[70%] lg:top-[30%] gap-4">
                 <div className="relative w-[110px] sm:w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px]">
-                  {/* Actual visible button */}
                   <div
                     className="border border-custom-secondary rounded-lg px-4 py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-custom-secondary/10 bg-opacity-80 backdrop-blur-sm"
                     style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
@@ -204,7 +224,6 @@ Add overflow-x-hidden pointer-events-none select-none z-10"
                       <div className="text-xs sm:text-sm lg:text-base text-custom-white font-tactic_sans">March</div>
                     </div>
                   </div>
-                  {/* Invisible clickable overlay above everything, including the cube */}
                   <button
                     aria-label="Open calendar modal"
                     className="absolute inset-0 w-full h-full z-30 cursor-pointer"
@@ -216,7 +235,6 @@ Add overflow-x-hidden pointer-events-none select-none z-10"
                   />
                 </div>
                 <div className="relative w-[110px] sm:w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px]">
-                  {/* Actual visible button */}
                   <div
                     className="border border-custom-secondary rounded-lg px-4 py-3 sm:px-6 sm:py-4 text-center cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-custom-secondary/10 bg-opacity-80 backdrop-blur-sm"
                     style={{ boxShadow: '0 0 20px rgba(230, 248, 90, 0.25)' }}
@@ -229,7 +247,6 @@ Add overflow-x-hidden pointer-events-none select-none z-10"
                       <div className="text-xs sm:text-sm lg:text-sm text-custom-white font-tactic_sans">Join Us At</div>
                     </div>
                   </div>
-                  {/* Invisible clickable overlay above everything, including the cube */}
                   <button
                     aria-label="Open location modal"
                     className="absolute inset-0 w-full h-full z-30 cursor-pointer"
