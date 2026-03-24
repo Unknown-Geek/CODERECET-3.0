@@ -126,7 +126,7 @@ function OurSponsors() {
                   <img
                     src="/assets/sponsor/OSEN.png"
                     alt="OSEN"
-                    className="h-[68px] sm:h-[48px] md:h-[64px] w-auto object-contain"
+                    className="h-[150px] sm:h-[90px] md:h-[102px] w-auto object-contain"
                   />
                 </a>
               </SponsorBox>
